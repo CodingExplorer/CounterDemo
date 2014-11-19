@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CounterDemo_Watch_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.75" alignment="left" hasDetent="YES" id="N9Z-eA-N1S">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="0" id="pDW-xz-ffW"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.25" alignment="left" hasDetent="YES" id="ZLD-fZ-t9a">
+                            <items>
+                                <button width="0.5" alignment="left" title="-" id="sCD-Ot-bub">
+                                    <connections>
+                                        <action selector="decrement" destination="AgC-eL-Hgc" id="9UU-Vv-l0n"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="+" id="dcl-Cs-PvT">
+                                    <connections>
+                                        <action selector="increment" destination="AgC-eL-Hgc" id="ufh-zV-1qn"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="tally" destination="pDW-xz-ffW" id="rgO-Nc-wI2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1232" y="754"/>
+        </scene>
+    </scenes>
+</document>
